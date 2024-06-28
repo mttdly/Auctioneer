@@ -83,21 +83,10 @@ public class AuctionsController : ControllerBase
         auction.Item.Mileage = updateAuctionDto.Mileage ?? auction.Item.Mileage;
         auction.Item.Year = updateAuctionDto.Year ?? auction.Item.Year;
 
-
-
-
-        // _mapper.Map(updateAuctionDto, auction);
         var result = await _context.SaveChangesAsync() > 0;
 
         if (result) return Ok();
         return BadRequest("Problem saving changes.");
-
-        // if (!result)
-        // {
-        //     return BadRequest("Could not save changes to the database.");
-        // }
-
-        // return Ok(_mapper.Map<AuctionDto>(auction));
     }
 
 
@@ -111,7 +100,6 @@ public class AuctionsController : ControllerBase
         _context.Auctions.Remove(auction);
         var result = await _context.SaveChangesAsync() > 0;
 
-        if (!result) return BadRequest("Could not update database.");
-        return Ok();
+        return !result ? BadRequest("Could not update database.") : Ok();
     }
 }
