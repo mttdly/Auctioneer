@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchService", "src\SearchService\SearchService.csproj", "{C57975C8-7D62-49DF-8F94-23AD44512223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\Contracts\Contracts.csproj", "{93D989C1-B798-4786-A64C-6EC20DF3829F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,22 @@ Global
 		{9D723D1D-C99D-4684-A321-50BC4EBA1DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D723D1D-C99D-4684-A321-50BC4EBA1DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D723D1D-C99D-4684-A321-50BC4EBA1DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C57975C8-7D62-49DF-8F94-23AD44512223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57975C8-7D62-49DF-8F94-23AD44512223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57975C8-7D62-49DF-8F94-23AD44512223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57975C8-7D62-49DF-8F94-23AD44512223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D989C1-B798-4786-A64C-6EC20DF3829F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D989C1-B798-4786-A64C-6EC20DF3829F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D989C1-B798-4786-A64C-6EC20DF3829F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D989C1-B798-4786-A64C-6EC20DF3829F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9D723D1D-C99D-4684-A321-50BC4EBA1DE0} = {5ADE0DC9-53B9-4760-BA2B-2FACBD7F5132}
+		{C57975C8-7D62-49DF-8F94-23AD44512223} = {5ADE0DC9-53B9-4760-BA2B-2FACBD7F5132}
+		{93D989C1-B798-4786-A64C-6EC20DF3829F} = {5ADE0DC9-53B9-4760-BA2B-2FACBD7F5132}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {794DB328-2BE7-440D-BF4E-9997CF09E3ED}
