@@ -207,7 +207,5 @@ public class DbInitializer
 
         context.AddRange(auctions);
         context.SaveChanges();
-
-
     }
 }
